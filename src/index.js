@@ -9,7 +9,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './assets/styles/main.css';
+
 import {
     createStore,
     applyMiddleware
@@ -26,23 +26,16 @@ window.onload = () => {
     const middleware = [thunk];
 
     if (process.env.NODE_ENV !== 'production') {
-         //middleware.push(createLogger());
+         middleware.push(createLogger());
     }
 
     let store = createStore(reducer, applyMiddleware(...middleware));
-
-    // store.dispatch(getLayoutData());
-    // store.dispatch(getHomeData());
-    // store.dispatch(getProductsData());
-
-    setTimeout(() => {
-        ReactDOM.render(
-            <Provider store={store}>
-                <BrowserRouter >
-                    <App />
-                </BrowserRouter>
-            </Provider>,
-            document.getElementById('root')
-        );
-    }, 500);
+    ReactDOM.render(
+        <Provider store={store}>
+            <BrowserRouter >
+                <App />
+            </BrowserRouter>
+        </Provider>,
+        document.getElementById('root')
+    );
 };
