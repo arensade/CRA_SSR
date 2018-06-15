@@ -1,11 +1,7 @@
 import async from "async";
 import * as WebService from '../services/webService';
 import * as actionTypes from "../constants/actionTypes";
-
-const homeData = (data) => ({
-    type: actionTypes.GET_HOME_DATA,
-    payload: data
-});
+import * as Actions from './../actions/index';
 
 export const getHomeDataInit = (dispatch) => {
     return new Promise((resolve,failure)=>{
@@ -22,7 +18,7 @@ export const getHomeDataInit = (dispatch) => {
                     })
             }
         ],(err,result)=>{
-            dispatch(homeData(result[0]));
+            dispatch(Actions.homeData(result[0]));
             resolve(result);
         });
     });
