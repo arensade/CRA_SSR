@@ -48,7 +48,7 @@ function handleRender(req, res, next) {
 
     let pageServices = new PageServices(req.url);
     const baseLink = "alisch.me";
-    let metas = {"title":"t,title","desc":"desc","keywords":"k,e,y,w,o,r,d,s","canonical":req.protocol + '://' + baseLink + req.originalUrl};
+    let metas = {"title":"title","desc":"desc","keywords":"k,e,y,w,o,r,d,s","canonical":req.protocol + '://' + baseLink + req.originalUrl};
     const context = {};
     const middleware = [ReduxThunk, promiseMiddleware, asyncAwait];
     const store = configureStore(applyMiddleware(...middleware));
