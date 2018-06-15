@@ -1,4 +1,3 @@
-import * as actionTypes from "../constants/actionTypes";
 import * as ROUTES from '../constants/routePaths';
 import {
     getHomeDataInit

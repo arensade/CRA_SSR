@@ -1,6 +1,5 @@
 import async from "async";
 import * as WebService from '../services/webService';
-import * as actionTypes from "../constants/actionTypes";
 import * as Actions from './../actions/index';
 
 export const getHomeDataInit = (dispatch) => {
