@@ -21,7 +21,7 @@ class HomePage extends Component{
                 {
                     this.props.HomeData && this.props.HomeData.items && this.props.HomeData.items.map((homeDataVal,homeDataInx)=>
 
-                        <div>
+                        <div key={homeDataInx}>
                             <p>{JSON.stringify(homeDataVal)}</p>
                         </div>
                     )
