@@ -5,9 +5,6 @@ or
 
 **npm install**
 
-
-And Run:
-
 in root directory please run:
 
 **node start-server.js** or
