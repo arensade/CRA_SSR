@@ -37,7 +37,7 @@
     "file-loader": "^0.11.2",
     "html-webpack-exclude-assets-plugin": "0.0.5",
     "ignore-loader": "^0.1.2",
-    "node-sass": "^4.5.0",
+    "node-sass": "^4.13.1",
     "npm-run-all": "^4.0.2",
     "react-router-dom": "^4.0.0",
     "react-scripts": "^0.9.0",
