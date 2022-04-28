@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "async": "^2.6.0",
+    "async": "^2.6.4",
     "axios": "^0.18.0",
     "compression": "^1.7.2",
     "express": "^4.16.3",
